@@ -29,8 +29,7 @@ public class Main {
 
     //Задани 2
     public static void checkingVersionApplication(int clientOS, int clientDeviceYear) {
-        int currentYear = LocalDate.now().getYear();
-        if (clientDeviceYear >= currentYear) {
+        if (clientDeviceYear >= 2015) {
             if (clientOS == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             } else {
