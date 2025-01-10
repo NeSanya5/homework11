@@ -11,11 +11,9 @@ public class Main {
         int clientDeviceYear = 2020;
         checkingVersionApplication(clientOS, clientDeviceYear);
         System.out.println("Задание 3");
-        int deliveryDistance = 90;
+        int deliveryDistance = 21;
         int total = day(deliveryDistance);
-        System.out.println(total);
-
-
+        System.out.println("Поторебуется дней: " + total);
     }
 
     //Задание 1
@@ -45,7 +43,7 @@ public class Main {
     //Задание 3
     public static int day(int deliveryDistance) {
         int day = 0;
-        if (deliveryDistance < 20) {
+        if (deliveryDistance <= 20) {
             day = day + 1;
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
             day = day + 2;
